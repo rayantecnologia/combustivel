@@ -3,7 +3,7 @@
 <html lang="pt">
   <head>
     <meta charset="utf-8">
-    <title>Kontrolli</title>
+    <title>Combustroli</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Controle de Combustível">
     <meta name="author" content="Andre Andrade">
@@ -94,28 +94,27 @@
 
   <body>
   	
-  	<div class="navbar navbar-inverse navbar-fixed-top visible-phone">
-      		<div class="navbar-inner">
-        		<div class="container-fluid">
-          			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-          			</button>
-          			<a class="brand" href="http://twitter.github.com/bootstrap/examples/fluid.html#">Navegação</a>
-          			<div class="nav-collapse collapse">
-            			<ul class="nav">
-                                    <li class="active"><a href="index.php">Inicial</a></li>
-                                    <li><a href="view/veiculos.php">Veículos</a></li>
-                                    <li><a href="view/fornecedor.php">Fornecedor</a></li>
-                			<li><a href="">#</a></li>
-                			<li><a href="#">#</a></li>
-                			<li><a href="#">#</a></li>
-            			</ul>
-          			</div><!--/.nav-collapse -->
-        		</div>
-      		</div>
-    	</div>
+  	    <div class="navbar navbar-inverse navbar-fixed-top visible-phone">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="#">Navegação</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="index.php">Inicial</a></li>
+                            <li ><a href="view/veiculos.php">Veículo</a></li>
+                            <li><a href="view/fornecedor.php"><i class="icon-shopping-cart"></i>Fornecedor</a></li>
+                            
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
 
     <div class="container">
 
@@ -136,12 +135,10 @@
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
-                <li class="active"><a href="index.html"><i class="icon-home"></i> Inicial</a></li>
-                <li><a href="view/veiculos.php"> <img src="assets/img/veiculo.png"> Veículos</a></li>
-                <li><a href="view/fornecedor.php"><i class="icon-shopping-cart"></i> Fornecedor</a></li>
-                <li><a href="#">#</a></li>
-                <li><a href="#">#</a></li>
-                <li><a href="#">#</a></li>
+                  <li class="active"><a href="index.php"><i class="icon-home"></i> Inicial</a></li>
+                  <li><a href="view/veiculos.php"> <img src="assets/img/veiculo.png"> Veículos</a></li>
+                <li ><a href="view/fornecedor.php"><i class="icon-shopping-cart"></i> Fornecedor</a></li>
+             
               </ul>
             </div>
           </div>
@@ -177,7 +174,7 @@
         <p>&copy; Acadtec 2013</p>
       </div>
 
-    </div> <!-- /container -->
+    </div><!-- /container -->
 
     <!-- Le javascript
     ================================================== -->

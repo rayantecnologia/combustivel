@@ -107,7 +107,7 @@
                         <ul class="nav">
                             <li><a href="../index.php">Inicial</a></li>
                             <li class="active"><a href="veiculos.php">Veículo</a></li>
-                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="fornecedor.php"><i class="icon-shopping-cart"></i>Fornecedor</a></li>
                             <li><a href="downloads.html">Downloads</a></li>
                             <li><a href="#">Quem Somos</a></li>
                             <li><a href="#">Contatos</a></li>
@@ -130,7 +130,7 @@
                             <ul class="nav">
                                 <li><a href="../index.php"><i class="icon-home"></i> Inicial</a></li>
                                 <li class="active"><a href="veiculos.php"> <img src="../assets/img/veiculo.png"> Veículos</a></li>
-                                <li><a href="servicos.html">#</a></li>
+                                <li><a href="fornecedor.php"><i class="icon-shopping-cart"></i>Fornecedor</a></li>
                                 <li><a href="downloads.html">#</a></li>
                                 <li><a href="#">#</a></li>
                                 <li><a href="#">#</a></li>
@@ -357,8 +357,8 @@
                     <center><p>&copy; Kontrolli</p></center>
                 </div>
 
+            </div>
             </div> <!-- /container -->
-
             <!-- Le javascript
             ================================================== -->
             <!-- Placed at the end of the document so the pages load faster -->
