@@ -34,8 +34,8 @@
                         <ul class="nav">
                             <li ><a href="../index.php">Início</a></li>
                             <li ><a href="veiculos.php">Veículo</a></li>
-                            <li class="active"><a href="fornecedor.php">Fornecedor</a></li>
-                            <li ><a href="licitacao.php">Licitações</a></li>
+                            <li ><a href="fornecedor.php">Fornecedor</a></li>
+                            <li class="active" ><a href="licitacao.php">Licitação</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
 
@@ -52,8 +52,8 @@
                     <div class="span2">
                         <h3>Menu</h3>
                         <ul class="nav nav-pills nav-stacked">
-                            <li class="active"><a href="fornecedor.php"><i class="icon-plus"></i> Cadastro</a></li>
-                            <li><a href="../view/listar_fornecedor.php"><i class="icon-search"></i> Localizar</a></li>
+                            <li class="active"><a href="licitacao.php.php"><i class="icon-plus"></i> Cadastro</a></li>
+                            <li><a href="../view/listar_licitacao.php"><i class="icon-search"></i> Localizar</a></li>
                         </ul>
                     </div>
 
@@ -61,7 +61,7 @@
                         <br>
                         <ul class="breadcrumb">
                             <li><a href="../index.php">Inicial</a> <span class="divider">/</span></li>
-                            <li><a href="fornecedor.php">Fornecedor</a></li>
+                            <li><a href="licitacao.php">Licitação</a></li>
                         </ul>
                         <?php
                         $sinal = isset($_GET['sucesso']);
@@ -79,106 +79,54 @@
    <span class='sr-only'></span></button><strong><center>Erro ao cadastrar o veículo</center></strong></div>";
                         }
                         ?>
-                        <h3> Cadastro de Fornecedores</h3>
+                        <h3> Cadastro de Licitação</h3>
                         <hr>
-                        <form  method=POST action="../model/fornecedor_model.php">
+                        <form  method=POST action="../model/licitacao_model.php">
                             <div class="tab-content">
                                 <div class="tab-pane active" id="cadastro">
                                     <div class="span5">
 
                                         <div class="control-group">
-                                            <label class="control-label" for="nome_fantasia_fornecedor">NOME FANTASIA :</label>
+                                            <label class="control-label" for="fornecedor_licitacao">FORNECEDOR:</label>
                                             <div class="controls">
-                                                <input type="text" id="nome_fantasia_fornecedor" name="nome_fantasia_fornecedor" class="input-xlarge" required="">
+                                                <input type="text" id="fornecedor_licitacao" name="fornecedor_licitacao" class="input-xlarge" required="">
+                                            </div>
+
+                                        </div>
+
+                                        <!-------------------------------------------------------------------------------------------------------------- --> 
+                                        <div class="control-group">
+                                            <label class="control-label" for="data_homologacao_licitacao">DATA HOLOGAÇÃO:</label>
+                                            <div class="controls">
+                                                <input type="date" id="data_homologacao_licitacao" name="data_homologacao_licitacao" class="input-medium" required="">
                                             </div>
 
                                         </div>
                                         <!-------------------------------------------------------------------------------------------------------------- --> 
                                         <div class="control-group">
-                                            <label class="control-label" for="razao_social_fornecedor">RAZÃO SOCIAL:</label>
+                                            <label class="control-label" for="valor_licitacao">VALOR LICITAÇÃO:</label>
                                             <div class="controls">
-                                                <input type="text" id="razao_social_fornecedor" name="razao_social_fornecedor" class="input-xlarge" required="">
+                                                <input type="text" id="valor_licitacao" name="valor_licitacao" class="input-medium" required="">
                                             </div>
 
                                         </div>
-                                        <!-------------------------------------------------------------------------------------------------------------- --> 
-                                        <div class="control-group">
-                                            <label class="control-label" for="cnpj_fornecedor">CNPJ:</label>
-                                            <div class="controls">
-                                                <input type="text" id="cnpj_fornecedor" name="cnpj_fornecedor" class="input-medium" required="">
-                                            </div>
-
-                                        </div>
-                                        <!-------------------------------------------------------------------------------------------------------------- --> 
-                                        <div class="control-group">
-                                            <label class="control-label" for="endereco_fornecedor">ENDEREÇO:</label>
-                                            <div class="controls">
-                                                <input type="text" id="endereco_fornecedor" name="endereco_fornecedor" class="input-xlarge" required="">
-                                            </div>
-
-                                        </div>
-                                        <!-------------------------------------------------------------------------------------------------------------- --> 
-                                        <div class="control-group">
-                                            <label class="control-label" for="bairro_fornecedor">BAIRRO:</label>
-                                            <div class="controls">
-                                                <input type="text" id="bairro_fornecedor" name="bairro_fornecedor" class="input-medium" required="">
-                                            </div>
-
-                                        </div>
-
-                                        <!-------------------------------------------------------------------------------------------------------------- -->
-                                        <div class="control-group">
-                                            <label class="control-label" for="cidade_fornecedor">CIDADE:</label>
-                                            <div class="controls">
-                                                <input type="text" id="cidade_fornecedor" name="cidade_fornecedor" class="input-xlarge" required="">
-                                            </div>
-                                        </div> 
 
                                     </div><!--Final Spam5-->
 
                                     <div class="span5">                                                                
-
-                                        <div class="control-group">
-                                            <label class="control-label" for="cep_fornecedor">CEP:</label>
-                                            <div class="controls">
-                                                <input type="text" id="cep_fornecedor" name="cep_fornecedor" class="input-medium" required="">
-                                            </div>
-                                        </div>
-                                        <!-------------------------------------------------------------------------------------------------------------- -->
-
-                                        <div class="control-group">
-                                            <label class="control-label" for="fone_fornecedor">FONE:</label>
-                                            <div class="controls">
-                                                <input type="tel" id="fone_fornecedor" name="fone_fornecedor" class="input-medium" required="">
-                                            </div>
-                                        </div>
-
                                         <!-------------------------------------------------------------------------------------------------------------- --> 
-
-                                        <div class="control-group">
-                                            <label class="control-label" for="celular_fornecedor">CELULAR:</label>
-                                            <div class="controls">
-                                                <input type="tel" id="celular_fornecedor" name="celular_fornecedor" class="input-medium" required="">
-                                            </div>
-                                        </div>
-
+                                        <label class="control-label" for="id_insumo_licitacao" >INSUMO:</label>
+                                        <select id="id_insumo_licitacao" name="id_insumo_licitacao" class="input-medium" required="">
+                                            <option value="1">ATIVO</option>
+                                            <option value="0">DESATIVADO</option>                                        
+                                        </select>  
                                         <!-------------------------------------------------------------------------------------------------------------- --> 
+                                        <label class="control-label" for="departamento_licitacao" >DEPARTAMENTO:</label>
+                                        <select id="departamento_licitacao" name="departamento_licitacao" class="input-xlarge" required="">
+                                            <option value="1">ATIVO</option>
+                                            <option value="0">DESATIVADO</option>                                        
+                                        </select>  
 
-
-                                        <div class="control-group">
-                                            <label class="control-label" for="email_fornecedor">E-MAIL:</label>
-                                            <div class="controls">
-                                                <input type="email" id="email_fornecedor" name="email_fornecedor" class="input-xlarge" required="">
-                                            </div>
-                                        </div>
-                                        <!-------------------------------------------------------------------------------------------------------------->
-
-                                        <div class="control-group">
-                                            <label class="control-label" for="contato_fornecedor">CONTATO:</label>
-                                            <div class="controls">
-                                                <input type="text" id="contato_fornecedor" name="contato_fornecedor" class="input-xlarge" required="">
-                                            </div>
-                                        </div>
 
                                     </div>  <!--Final Span5-->                                
                                 </div><!--Final Active Panel cadastro-->
